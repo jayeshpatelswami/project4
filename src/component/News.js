@@ -32,7 +32,7 @@ export default class News extends Component {
     
     async componentDidMount(){
       let url = `https://newsapi.org/v2/top-headlines?country=${this.props.contry}&category=${this.props.category}&apiKey=1cfbe18de4d94760b8a2ddd33b2d89f6&page-1&pagesize=${this.props.pagesize}`;
-      alert(url);
+      // alert(url);
       let data = await fetch(url);
       let parsedata = await data.json()
       console.log(this.props.category);
