@@ -35,7 +35,7 @@ export default class News extends Component {
       // alert(url);
       let data = await fetch(url);
       let parsedata = await data.json()
-      console.log(this.props.category);
+      // console.log(this.props.category);
   //  console.log(parsedata);
   this.setState({articles: parsedata.articles})
 }
@@ -56,7 +56,8 @@ export default class News extends Component {
                  title1={elme.title ? elme.title.slice(0,35) : ""}
                  discription1={elme.description ?  elme.description.slice(0,55) : ""} 
                  url={elme.url}
-                 imgurl={elme.urlToImage}/>
+                 
+                 imgurl={elme.urlToImage}/>               
                  </div>
               </div>
 
